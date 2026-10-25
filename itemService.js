@@ -2,10 +2,7 @@ import { items } from './data.js';
 
 export const getAllItems = () => {
   console.log("\n=== DAFTAR INVENTARIS BARANG ===");
-  items.forEach((item) => {
-    const { id, name, category, stock } = item; 
-    console.log(`[ID: ${id}] ${name} | Kategori: ${category} | Stok: ${stock}`); 
-  });
+  console.table(items);
 };
 
 export const addItem = (name, category, stock) => {
